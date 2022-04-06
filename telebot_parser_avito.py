@@ -55,7 +55,7 @@ def start(message):
             l = str(s[2] + '/' + s[5] + '/' + s[6] + '/' + s[7])
             if l not in resultat:
                 resultat.append(l)
-                bot.send_message(5273553634, f"Новое объявление - {l}\nГород {i['Район']}\nЦена {i['Цена']}")
+                bot.send_message(message.chat.id, f"Новое объявление - {l}\nГород {i['Район']}\nЦена {i['Цена']}")
 
         time.sleep(random.randint(61, 232))
 
